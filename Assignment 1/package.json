@@ -13,7 +13,7 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.16",
+    "@tailwindcss/cli": "^4.1.16",
     "tailwindcss": "^4.1.16"
   }
 }

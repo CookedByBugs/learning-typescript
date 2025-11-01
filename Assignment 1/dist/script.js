@@ -52,9 +52,64 @@ const sum = () => {
     const output = document.getElementById("output");
     if (statement)
         statement.innerHTML =
-            "<p class='text-center'>if(output) output.innerHTML = sum.toString()</p>";
+            "<p class='text-center'>const sum: number = n1 + n2;</p>";
     if (output)
-        output.innerHTML = "<p class='text-center'>" + sum.toString() + "</p>";
+        output.innerHTML = "<p class='text-center'>" + sum + "</p>";
+};
+const subtract = () => {
+    const num1 = prompt("Enter first number");
+    const n1 = Number(num1);
+    const num2 = prompt("Enter second number");
+    const n2 = Number(num2);
+    console.log(n1, n2);
+    const subtract = n1 - n2;
+    const statement = document.getElementById("statement");
+    const output = document.getElementById("output");
+    if (statement)
+        statement.innerHTML =
+            "<p class='text-center'>const subtract: number = n1 - n2;</p>";
+    if (output)
+        output.innerHTML = "<p class='text-center'>" + subtract + "</p>";
+};
+const multiply = () => {
+    const num1 = prompt("Enter first number");
+    const n1 = Number(num1);
+    const num2 = prompt("Enter second number");
+    const n2 = Number(num2);
+    console.log(n1, n2);
+    const multiply = n1 * n2;
+    const statement = document.getElementById("statement");
+    const output = document.getElementById("output");
+    if (statement)
+        statement.innerHTML =
+            "<p class='text-center'>const multiply: number = n1 * n2;</p>";
+    if (output)
+        output.innerHTML = "<p class='text-center'>" + multiply + "</p>";
+};
+const divide = () => {
+    const num1 = prompt("Enter first number");
+    const n1 = Number(num1);
+    const num2 = prompt("Enter second number");
+    const n2 = Number(num2);
+    console.log(n1, n2);
+    const divide = n1 / n2;
+    const statement = document.getElementById("statement");
+    const output = document.getElementById("output");
+    if (statement)
+        statement.innerHTML =
+            "<p class='text-center'>const divide: number = n1 / n2;</p>";
+    if (output)
+        output.innerHTML = "<p class='text-center'>" + divide + "</p>";
+};
+const calculate = () => {
+    const result = (36 / 6) * 3 + Math.pow(2, 4) - (3 + 5);
+    const statement = document.getElementById("statement");
+    const output = document.getElementById("output");
+    if (statement)
+        statement.innerHTML =
+            "<p class='text-center'>const result:number = 36 / 6 * 3 + 2 ** 4 - (3 + 5);</p>";
+    if (output)
+        output.innerHTML = "<p class='text-center'>" + result + "</p>";
 };
 const clearStatement = () => {
     const statement = document.getElementById("statement");

@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "npx @tailwindcss/cli -i ./src/styles/input.css -o ./src/styles/output.css --watch"
+ ,"start": "npx tsc --watch"
   },
   "keywords": [],
   "author": "",

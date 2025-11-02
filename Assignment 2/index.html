@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/output.css" />
+    <title>Learning Typescript</title>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header class="bg-[#1d3557] p-4 text-white">
+      <h1 class="md:text-4xl text-3xl text-center">Assignment 2</h1>
+    </header>
+    <main class="max-w-[80%] mx-auto w-full">
+      <h1 class="p-3 text-4xl text-center my-5">
+        Concatenation | Prompts | if..else and else if statements
+      </h1>
+      <hr class="text-gray-400" />
+      <div
+        class="rounded border border-gray-400 my-5 p-3 grid gap-2 md:grid-cols-5 grid-cols-1"
+      >
+        <button class="btn" onclick="concatnateStrings()">
+          Concatenate some strings
+        </button>
+        <button class="btn" onclick="askNameFromUser()">
+          Ask Name From User
+        </button>
+        <button class="btn" onclick="compareNumbers()">Compare numbers</button>
+        <button class="btn" onclick="ifElseIf()">if else if</button>
+        <button class="btn" onclick="testConditions()">
+          Testing sets of conditions
+        </button>
+        <button class="btn" onclick="ifNested()">if statement nested</button>
+        <button class="btn" onclick="login()">Login</button>
+      </div>
+      <div class="p-3 my-5">
+        <h2 class="text-3xl text-center">Statement</h2>
+        <div class="border border-gray-400 p-3" id="statement"></div>
+        <div class="text-center p-3">
+          <button
+            onclick="clearStatement()"
+            class="bg-gray-300 hover:bg-gray-400 rounded p-3 transition-all duration-200"
+          >
+            Clear Statement
+          </button>
+        </div>
+      </div>
+      <div class="p-3 my-5">
+        <h2 class="text-3xl text-center">Output</h2>
+        <div class="border border-gray-400 p-3" id="output"></div>
+        <div class="text-center p-3">
+          <button
+            onclick="clearOutput()"
+            class="bg-gray-300 hover:bg-gray-400 rounded p-3 transition-all duration-200"
+          >
+            Clear Output
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="mt-auto bg-[#111] text-white p-1 text-center">
+      &copy; <span id="year"></span> All Rights Reserved
+    </footer>
+    <script src="./dist/script.js"></script>
+  </body>
+</html>

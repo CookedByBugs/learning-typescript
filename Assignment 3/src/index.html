@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/output.css" />
+    <title>Assignment 3</title>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <header class="bg-[#1d3557] p-3">
+      <h1 class="text-4xl text-center text-white">Assignment 3</h1>
+    </header>
+    <main class="max-w-[80%] w-full mx-auto">
+      <h1 class="my-10 text-3xl text-center">Arrays: It's methods for loops</h1>
+
+      <div class="my-10 grid md:grid-cols-2 grid-cols-1 gap-10">
+        <!-- Input -->
+        <div class="">
+          <p class="text-center">Input</p>
+          <div class="border border-gray-400 p-2">
+            <div class="flex items-center">
+              <input
+                id="input"
+                type="text"
+                placeholder="Recipient's Name"
+                class="p-1 outline-0 border border-gray-400 w-full rounded-s-lg"
+              />
+              <button
+                class="p-1 border-gray-400 transition-all duration-300 border hover:bg-gray-300 rounded-e-lg"
+              >
+                Clear
+              </button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="text-center">Orignal String</p>
+          <div
+            class="p-1 bg-[#1d3557] text-white flex justify-center items-center"
+          >
+            <p id="cities"></p>
+          </div>
+        </div>
+      </div>
+      <div class="my-10 grid lg:grid-cols-2 grid-cols-1 gap-10">
+        <div class="p-3">
+          <p class="mb-2 text-center">Buttons</p>
+          <div
+            class="border p-4 border-gray-400 grid md:grid-cols-3 grid-cols-1 gap-3"
+          >
+            <button class="btn" onclick="showAlert()">Simple Alert</button>
+            <button class="btn" onclick="printName()">Print My Name</button>
+            <button class="btn" onclick="printCities()">
+              Print All Cities
+            </button>
+            <button class="btn" onclick="addCity()">Add Your City</button>
+            <button class="btn" onclick="generateTable()">
+              Generate table
+            </button>
+          </div>
+        </div>
+        <div>
+          <p class="text-center mb-5">Output</p>
+          <div
+            id="output"
+            class="border min-h-[100px] p-3 border-gray-400"
+          ></div>
+          <div class="text-center">
+            <button
+            onclick="clearOutput()"
+              class="bg-gray-200 border my-4 border-gray-400 p-2 hover:bg-gray-400 transition-all duration-300"
+            >
+              Clear Output
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="../dist/script.js"></script>
+  </body>
+</html>

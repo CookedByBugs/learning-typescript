@@ -1,6 +1,6 @@
 //  1) Faisalabad 2) Lahore 3) Karachi 4) Islamabad 5) Burewala 6) Sheikhupura 7) Kashmir
 
-const cities = [
+const cities: string[] = [
   "Faisalabad",
   "Lahore",
   "Karachi",
